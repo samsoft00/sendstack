@@ -1,4 +1,4 @@
-![](https://play-lh.googleusercontent.com/y84DptJ3vf-lcfxoS6yJlTqq8kXBX3lkdJeDj36cJqP-sHPXWkENUDO-vIHCT-h8BmAV=w240-h480-rw "Sendstack Logo")
+![](https://github.com/samsoft00/sendstack/blob/main/logo.svg "Sendstack Logo")
 
 # JavaScript API Client for [Sendstack Africa](https://www.sendstack.africa)
 
