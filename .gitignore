@@ -1,0 +1,10 @@
+# Keep environment variables out of version control
+node_modules
+package-lock.json
+build/
+
+2c6eaee810d1.json
+.env
+coverage
+task.txt
+.vscode

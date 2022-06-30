@@ -21,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/samsoft00/sendstack/issues"
   },
-  "homepage": "https://github.com/samsoft00/sendstack#readme"
+  "homepage": "https://github.com/samsoft00/sendstack#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
 }
