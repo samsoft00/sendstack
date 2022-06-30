@@ -24,6 +24,11 @@
   "homepage": "https://github.com/samsoft00/sendstack#readme",
   "dependencies": {},
   "devDependencies": {
+    "@types/globalthis": "^1.0.1",
+    "@types/jest": "^28.1.4",
+    "@types/node-fetch": "^2.6.2",
+    "jest": "^28.1.2",
+    "ts-jest": "^28.0.5",
     "typescript": "^4.7.4"
   }
 }
