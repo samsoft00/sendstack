@@ -36,7 +36,7 @@ yarn add sendstack
 // const SendstackClient = require('sendstack-client'); // uncomment in NodeJS environments
 
 new SendstackClient("MY_SENDSTACK_APP_SECRET", "APP_ID")
-    .walletBalance()
+	.walletBalance()
 	.then(balance => console.log(`Current balance: ${balance}`))
 	.catch(console.error);
 ```
