@@ -22,6 +22,14 @@
     "url": "https://github.com/samsoft00/sendstack/issues"
   },
   "homepage": "https://github.com/samsoft00/sendstack#readme",
+  "ts-standard": {
+    "project": "./tsconfig.json",
+    "ignore": [
+      "dist",
+      "**/*.spec.ts",
+      "node_modules/**"
+    ]
+  },
   "dependencies": {},
   "devDependencies": {
     "@types/globalthis": "^1.0.1",
@@ -29,6 +37,7 @@
     "@types/node-fetch": "^2.6.2",
     "jest": "^28.1.2",
     "ts-jest": "^28.0.5",
+    "ts-standard": "^11.0.0",
     "typescript": "^4.7.4"
   }
 }
