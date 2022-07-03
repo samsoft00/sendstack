@@ -1,5 +1,5 @@
-const apiKey = "GG6BSJV1KTKEZE8DYQL8VY2Z2XB46G26"
-const appId = "0748943"
+const apiKey = process.env.SENDSTACK_API_KEY
+const appId = process.env.SENDSTACK_APP_ID
 
 if (!apiKey) {
   throw new Error('SENDSTACK_API_KEY environment variable is not set')
