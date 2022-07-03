@@ -2,9 +2,13 @@
   "name": "sendstack",
   "version": "1.0.0",
   "description": "JavaScript API Client for [Sendstack Africa]",
-  "main": "index.js",
+  "main": "dist/Sendstack.umd.js",
+  "types": "dist/Sendstack.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf dist && tsc && npm run bundle",
+    "bundle": "node build/build.js",
+    "prepublishOnly": "npm run build",
+    "test": "npx jest"
   },
   "repository": {
     "type": "git",
@@ -21,6 +25,12 @@
   "bugs": {
     "url": "https://github.com/samsoft00/sendstack/issues"
   },
+  "files": [
+    "dist/Sendstack.umd.js",
+    "dist/constants/**/*",
+    "dist/*.d.ts",
+    "dist/types/*.d.ts"
+  ],  
   "homepage": "https://github.com/samsoft00/sendstack#readme",
   "ts-standard": {
     "project": "./tsconfig.json",
@@ -30,14 +40,20 @@
       "node_modules/**"
     ]
   },
-  "dependencies": {},
+  "peerDependencies": {
+    "node-fetch": "^2.6.6"
+  },  
   "devDependencies": {
     "@types/globalthis": "^1.0.1",
     "@types/jest": "^28.1.4",
-    "@types/node-fetch": "^2.6.2",
-    "jest": "^28.1.2",
-    "ts-jest": "^28.0.5",
+    "@types/node": "^18.0.0",
+    "@types/node-fetch": "^2.5.12",
+    "browserify": "^17.0.0",
+    "jest": "^27.4.7",
+    "node-fetch": "^2.6.7",
+    "ts-jest": "^27.1.3",
     "ts-standard": "^11.0.0",
+    "tsify": "^5.0.4",
     "typescript": "^4.7.4"
   }
 }
