@@ -45,7 +45,7 @@ new SendstackClient("<MY_SENDSTACK_APP_SECRET">, "<APP_ID>")
 
 1. `git clone https://github.com/samsoft00/sendstack`
 2. `cd sendstack && npm install`
-3. `APP_SECRET=InsertSendstackApiKey npm run test`
+3. `SENDSTACK_API_KEY=<apiKey> SENDSTACK_APP_ID=<appId>  npm run test`
 
 Set `SENDSTACK_LIVE_TEST=1` for live tests performing actual HTTP requests.
 
